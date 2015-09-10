@@ -1197,7 +1197,7 @@ repositories:
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/tork-a/jsk_3rdparty-release.git
-      version: 2.0.5-0
+      version: 2.0.6-0
     status: developed
   jsk_common:
     doc:
@@ -1490,7 +1490,7 @@ repositories:
       tags:
         release: release/jade/{package}/{version}
       url: https://github.com/mavlink/mavlink-gbp-release.git
-      version: 2015.8.8-0
+      version: 2015.9.9-0
     status: maintained
   mavros:
     doc:
@@ -3595,6 +3595,17 @@ repositories:
       url: https://github.com/ros-drivers/smart_battery_msgs.git
       version: master
     status: maintained
+  sophus:
+    release:
+      tags:
+        release: release/jade/{package}/{version}
+      url: https://github.com/yujinrobot-release/sophus-release.git
+      version: 0.9.0-0
+    source:
+      type: git
+      url: https://github.com/stonier/sophus.git
+      version: jade
+    status: maintained
   spatial_temporal_learning:
     doc:
       type: git
@@ -3892,6 +3903,11 @@ repositories:
       url: https://github.com/bosch-ros-pkg/usb_cam.git
       version: develop
     status: maintained
+  vicon_bridge:
+    doc:
+      type: git
+      url: https://github.com/ethz-asl/vicon_bridge.git
+      version: master
   video_stream_opencv:
     doc:
       type: git

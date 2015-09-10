@@ -295,6 +295,19 @@ repositories:
       version: indigo-devel
     status: maintained
   aras_visual_servo:
+    doc:
+      type: git
+      url: https://github.com/babaksit/aras_visual_servo.git
+      version: master
+    release:
+      packages:
+      - aras_visual_servo_camera
+      - aras_visual_servo_controller
+      - aras_visual_servo_gazebo
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/babaksit/aras_visual_servo-release.git
+      version: 0.0.1-1
     source:
       type: git
       url: https://github.com/babaksit/aras_visual_servo.git
@@ -1713,6 +1726,15 @@ repositories:
       url: https://github.com/ros/dynamic_reconfigure.git
       version: master
     status: maintained
+  dynamicvoronoi:
+    doc:
+      type: git
+      url: https://github.com/frontw/dynamicvoronoi.git
+      version: master
+    source:
+      type: git
+      url: https://github.com/frontw/dynamicvoronoi.git
+      version: master
   dynamixel_motor:
     doc:
       type: git
@@ -2033,23 +2055,6 @@ repositories:
       type: git
       url: https://github.com/inomuh/evapi_ros.git
       version: eva50
-    release:
-      packages:
-      - evarobot_bumper
-      - evarobot_controller
-      - evarobot_driver
-      - evarobot_eio
-      - evarobot_infrared
-      - evarobot_minimu9
-      - evarobot_odometry
-      - evarobot_orientation
-      - evarobot_sonar
-      - evarobot_start
-      - im_msgs
-      tags:
-        release: release/indigo/{package}/{version}
-      url: https://github.com/inomuh/evapi_ros.git
-      version: 0.1.2-0
     source:
       type: git
       url: https://github.com/inomuh/evapi_ros.git
@@ -2882,63 +2887,20 @@ repositories:
       version: indigo-devel
     status: maintained
   homer_android_speech:
-    doc:
-      type: git
-      url: https://gitlab.uni-koblenz.de/robbie/homer_android_speech.git
-      version: master
     release:
       packages:
       - android_speech_pkg
       tags:
         release: release/indigo/{package}/{version}
       url: https://gitlab.uni-koblenz.de/robbie/homer_android_speech.git
-      version: 0.5
-  homer_gui:
-    doc:
-      type: git
-      url: https://gitlab.uni-koblenz.de/robbie/homer_gui.git
-      version: master
-  homer_map_nav:
-    doc:
-      type: git
-      url: https://gitlab.uni-koblenz.de/robbie/homer_mapnav.git
-      version: master
-    release:
-      packages:
-      - homer_map_manager
-      - homer_mapnav_msgs
-      - homer_mapping
-      - homer_nav_libs
-      - homer_navigation
-      tags:
-        release: release/indigo/{package}/{version}
-      url: https://gitlab.uni-koblenz.de/robbie/homer_mapnav.git
-      version: 0.5
-  homer_object_recognition:
-    doc:
-      type: git
-      url: https://gitlab.uni-koblenz.de/robbie/homer_object_recognition.git
-      version: master
-    release:
-      packages:
-      - or_libs
-      - or_msgs
-      - or_nodes
-      tags:
-        release: release/indigo/{package}/{version}
-      url: https://gitlab.uni-koblenz.de/robbie/homer_object_recognition.git
+      version: 0.0.2-0
   homer_robot_face:
-    doc:
-      type: git
-      url: https://gitlab.uni-koblenz.de/robbie/homer_robot_face.git
-      version: master
     release:
       packages:
       - robot_face
       tags:
         release: release/indigo/{package}/{version}
       url: https://gitlab.uni-koblenz.de/robbie/homer_robot_face.git
-      version: 0.5
   household_objects_database:
     release:
       tags:
@@ -3546,7 +3508,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/tork-a/jsk_3rdparty-release.git
-      version: 2.0.5-0
+      version: 2.0.6-0
     status: developed
   jsk_common:
     doc:
@@ -3675,7 +3637,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/tork-a/jsk_recognition-release.git
-      version: 0.3.4-0
+      version: 0.3.5-0
     status: developed
   jsk_robot:
     doc:
@@ -3741,7 +3703,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/tork-a/jsk_visualization-release.git
-      version: 1.0.23-0
+      version: 1.0.24-0
     status: developed
   jskeus:
     doc:
@@ -4489,7 +4451,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/mavlink/mavlink-gbp-release.git
-      version: 2015.8.8-0
+      version: 2015.9.9-0
     status: maintained
   mavros:
     doc:
@@ -9684,6 +9646,16 @@ repositories:
       type: git
       url: https://github.com/pal-robotics/tiago_robot.git
       version: indigo-devel
+    release:
+      packages:
+      - tiago_bringup
+      - tiago_controller_configuration
+      - tiago_description
+      - tiago_robot
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/pal-gbp/tiago_robot-release.git
+      version: 0.0.1-0
     source:
       type: git
       url: https://github.com/pal-robotics/tiago_robot.git
@@ -9694,6 +9666,15 @@ repositories:
       type: git
       url: https://github.com/pal-robotics/tiago_simulation.git
       version: indigo-devel
+    release:
+      packages:
+      - tiago_gazebo
+      - tiago_hardware_gazebo
+      - tiago_simulation
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/pal-gbp/tiago_simulation-release.git
+      version: 0.0.1-0
     source:
       type: git
       url: https://github.com/pal-robotics/tiago_simulation.git
@@ -10241,6 +10222,11 @@ repositories:
       url: https://github.com/jack-oquin/velodyne_height_map.git
       version: master
     status: maintained
+  vicon_bridge:
+    doc:
+      type: git
+      url: https://github.com/ethz-asl/vicon_bridge.git
+      version: master
   video_stream_opencv:
     doc:
       type: git
@@ -10369,6 +10355,15 @@ repositories:
       type: git
       url: https://github.com/uos/volksbot_driver.git
       version: indigo
+  voronoi_planner:
+    doc:
+      type: git
+      url: https://github.com/frontw/voronoi_planner.git
+      version: master
+    source:
+      type: git
+      url: https://github.com/frontw/voronoi_planner.git
+      version: master
   vrep_ros_bridge:
     doc:
       type: git
@@ -10495,7 +10490,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/clearpath-gbp/wireless-release.git
-      version: 0.0.6-0
+      version: 0.0.7-0
     source:
       type: git
       url: https://github.com/clearpathrobotics/wireless.git
